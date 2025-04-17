@@ -1,51 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <td><img src="https://cdn3.emoji.gg/emojis/2377-bunny-excited.png" alt="Imagem 1" width="100" height="100"></td>
-        <td><img src="https://static.vecteezy.com/system/resources/previews/016/704/184/original/pink-realistic-heart-isolate-on-transparente-background-symbol-love-3d-heart-icon-png.png" alt="Imagem 2" width="100" height="100"></td>
-        <td><img src="https://cdn3.emoji.gg/emojis/8809-bunny-happy.png" alt="Imagem 3" width="100" height="100"></td>
-    </tr>
-             <br>
+  <meta charset="UTF-8">
+  <title>Sanrio Lovers</title>
 
-  <h1><i class="material-icons" style="color: Lightpink;">coelhinhos mais famosos ˚ ‧₊˚❀༉‧₊˚.</i></h1>
-  
-  
-  <title>JS Bin</title>
+  <!-- Fonte Borel para um toque fofo -->
+  <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f4e9; /* Fundo suave em bege claro */
+    }
+
+    nav {
+      background-color: #ffe6e6; /* Fundo suave */
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      border-bottom: 3px solid #ff1a1a; /* Vermelho mais intenso */
+    }
+
+    nav a {
+      text-decoration: none;
+      text-align: center;
+      color: #d40000; /* Vermelho vibrante */
+      font-weight: bold;
+    }
+
+    nav a img {
+      display: block;
+      margin: 0 auto 5px;
+      width: 40px;
+      height: 40px;
+      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff1a1a; /* Vermelho vivo */
+      font-family: 'Borel', cursive;
+      font-size: 2.5em;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #e60000; /* Vermelho forte */
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #ffe6e6;
+      color: #d40000;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 2px solid #ff1a1a;
+    }
+
+    /* Adicionando o emote de laço no rodapé */
+    .bow-emote {
+      font-size: 1.5em;
+      color: #ff1a1a;
+    }
+  </style>
 </head>
 <body>
-  <h2 style="color: hsl(346, 70%, 58%);">Nova Zelândia</h2>
-  <img src="https://i.pinimg.com/736x/6b/a7/18/6ba71851a3968d1ba1bb6ac171ad7d1f.jpg" alt="novazelandai" width="300" height="200">
-  <p>Esse é o coelhinho da canção de Páscoa: branquinho e de olhos vermelhos. Porém, o Nova Zelândia também pode ser vermelho, preto ou broken (branco com manchas espalhadas pelo corpo, que podem ser de qualquer cor citada).
 
-A pelagem é densa, uniforme e muito fofinha. A cor dos olhos, em geral, é a mesma da pelagem. Isso só não acontece com o coelho branco: ele tem retinas despigmentadas que parecem vermelhas.
-</p>
-  <li>tamanho: trata-se de um coelho grande a giganter;</li>
-  <li>peso: 3 a 5 kg;</li>
-  <li>expectativa de vida: de 8 a 10 anos;</li>
-  <li>comportamento: animal bem reservado, mas bastante dócil e tranquilo.</li>
-  
+  <!-- Menu com personagens fofos da Sanrio -->
+  <nav>
+    <a href="https://hellokitty.fandom.com/wiki/Wish_me_mell" target="_blank">
+      <img src="https://vignette.wikia.nocookie.net/hellokitty/images/6/65/Sanrio_Characters_Wish_me_mell_Image002.png/revision/latest?cb=20170405032710" alt="Wish Me Mell">
+      Wish Me Mell
+    </a>
+    <a href="https://hellokitty.fandom.com/wiki/My_Sweet_Piano" target="_blank">
+      <img src="https://s1.stickers.cloud/packs/17d58e5f-355c-4b80-8c28-1dc616eb602a/png/0c86f65a-2ea5-4fc4-a481-9d316a6e4489.png" alt="My Sweet Piano">
+      My Sweet Piano
+    </a>
+    <a href="https://hellokitty.fandom.com/wiki/Ruby_(Jewelpet)" target="_blank">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fdfdad46-85a7-4c8f-881a-40e047db0696/de5xb8o-fdaa477b-8349-4d02-b2c7-256842b15f80.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZkZmRhZDQ2LTg1YTctNGM4Zi04ODFhLTQwZTA0N2RiMDY5NlwvZGU1eGI4by1mZGFhNDc3Yi04MzQ5LTRkMDItYjJjNy0yNTY4NDJiMTVmODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.03Qkz4YS3AsbDOFbbFXZsWnSYJcI7MBjsI5zcAbhq5s" alt="Jewelpet Ruby">
+      Jewelpet Ruby
+    </a>
+    <a href="https://hellokitty.fandom.com/wiki/Cinnamoroll" target="_blank">
+      <img src="https://th.bing.com/th/id/R.902e39e1bfe0a996f55e0829978ba418?rik=cVzGR2Xoyv6c3A&pid=ImgRaw&r=0" alt="Cinnamoroll">
+      Cinnamoroll
+    </a>
+    <a href="https://hellokitty.fandom.com/wiki/Littleforestfellow/" target="_blank">
+      <img src="https://th.bing.com/th/id/R.acb36bd74ff82fb78a93a378e6e19c0e?rik=QWG1w%2fH8t84qpw&pid=ImgRaw&r=0" alt="Little Forest Fellow">
+      Little Forest Fellow
+    </a>
+    <a href="https://hellokitty.fandom.com/wiki/Chibimaru" target="_blank">
+      <img src="https://vignette2.wikia.nocookie.net/hellokitty/images/3/3e/Sanrio_Characters_Chibimaru_Image005.png/revision/latest?cb=20170519000730" alt="Chibimaru">
+      Chibimaru
+    </a>
+    <a href="https://hellokitty.fandom.com/wiki/Sugarbunnies" target="_blank">
+      <img src="https://www.line-stickers.com/wp-content/uploads/2021/07/Sugarbunnies-.png" alt="Sugarbunnies">
+      Sugarbunnies
+    </a>
+  </nav>
 
-  <br> 
-   <h2 style="color: #b12747;">Holland Lop</h2>
-  <img src="https://i.pinimg.com/736x/94/e4/3b/94e43bab860236bb02b4f1d85c632ffb.jpg" alt="lop" width="300" height="200">
-  <p>Esse animal surgiu na Holanda, fruto do cruzamento entre outras raças de coelho (Lop Francês e Anão Holandês). Apesar de estar entre as raças que se adaptam bem à vida doméstica, ele precisa de socialização com outros bichinhos da mesma espécie.
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Sanrio</h1>
+    <p>A votação dos personagens mais populares da Sanrio em 2025 já começou e, como de costume, está movimentando fãs do mundo todo. A eleição, que acontece anualmente e está celebrando seu 40º aniversário, é um dos eventos mais queridos da cultura pop japonesa. Milhares de fãs se reúnem para votar diariamente, divulgar seus favoritos nas redes sociais e fazer campanhas apaixonadas.</p>
 
-No físico, destacam-se as orelhas caídas e o pelo fofinho, que criam uma espécie de coroa no topo da cabeça. O Holland Lop também tem pernas curtas e corpo compacto. Por isso, é considerado uma raça de pequeno porte e parece estar sempre abaixado. </p>
-  <li>tamanho: pequeno;</li>
-  <li>peso: de 1 kg a 2 kg</li>
-  <li>expectativa de vida: de 7 a 12 anos;</li>
-  <li>comportamento: carinhoso e calmo.</li>
-  
-  <br>
-  <h2 style="color: #fd537b;"> Rex</h2>
- <img src="https://www.mundoecologia.com.br/wp-content/gallery/especies-de-coelho-rex/Esp%C3%A9cie-de-Coelho-Rex-Rex-Tricolor.jpg" alt="rex" width="300" height="200">
-  <p> Segundo pesquisas, o Rex surgiu na França e logo conquistou o mundo com beleza e personalidade. Hoje, ele é um dos mais populares tipos de coelho doméstico. As orelhas arrebitadas e os olhos grandes conferem a ele uma típica imagem de “coelhinho da Páscoa”.
+    <p>Neste ano, <strong>Pompompurin</strong> lidera a competição, surpreendendo ao ultrapassar o habitual vencedor <strong>Cinnamoroll</strong>, que aparece em segundo lugar. <strong>Pochacco</strong> e <strong>Kuromi</strong> seguem firmes no top 5, enquanto a clássica <strong>Hello Kitty</strong> aparece na quinta posição, mostrando que ainda mantém uma base fiel de admiradores mesmo após tantos anos.</p>
 
-O pelo é curto, porém aveludado. As cores mais comuns são: cinza, preto, branco e creme. Já os olhos variam entre vermelho e azul. Com personalidade ativa e gentil, o Rex adora receber carinho da família! Outra característica marcante é a inteligência. Esse pet adora brincar e precisa de atividades diárias. </p>
-  <li> tamanho: médio/grande; </li>
-  <li> peso: de 3 kg a 4,5 kg; </li>
-  <li> expectativa de vida: de 6 a 8 anos; </li>
-  <li> comportamento: amável e inteligente. </li>
+    <p>Entre os menos votados estão personagens adoráveis, porém menos conhecidos como <strong>My Sweet Piano</strong>, <strong>Wish Me Mell</strong>, <strong>Chibimaru</strong>, <strong>Little Forest Fellow</strong> e <strong>Sugarbunnies</strong>. Apesar de não liderarem, esses personagens encantam por seu visual delicado e conquistam um público mais nichado.</p>
+
+    <p>A votação ainda está em andamento, e os fãs seguem animados com a possibilidade de reviravoltas. A cada ano, a eleição mostra o poder da comunidade Sanrio e o amor que o público tem por esse universo encantador de personagens.</p>
+
+    <p>Você pode acompanhar o ranking completo e votar no seu personagem favorito clicando aqui:  
+    <a href="https://ranking.sanrio.co.jp/en/characters/" target="_blank">ranking.sanrio.co.jp/en/characters</a>.</p>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <span class="bow-emote"></span> © 2025 - Rayssa Esparza 🎀 feito com carinho.
+  </footer>
 
 </body>
 </html>
